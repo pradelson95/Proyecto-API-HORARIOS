@@ -1,0 +1,67 @@
+/* Estilos generales del body */
+body {
+    font-family: Arial, sans-serif; /* Fuente básica */
+    background-color: #f4f6f9; /* Fondo gris claro */
+    display: flex; /* Permite centrar */
+    justify-content: center; /* Centrado horizontal */
+    align-items: center; /* Centrado vertical */
+    height: 100vh; /* Altura total de la pantalla */
+}
+
+/* Caja blanca principal */
+.container {
+    background: white; /* Fondo blanco */
+    padding: 30px; /* Espacio interno */
+    border-radius: 8px; /* Bordes redondeados */
+    width: 350px; /* Ancho fijo */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+/* Título */
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Espaciado entre campos */
+.form-group {
+    margin-bottom: 15px;
+}
+
+/* Etiquetas */
+label {
+    display: block; /* Ocupa línea completa */
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* Inputs */
+input {
+    width: 100%; /* Ocupa todo el ancho */
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+/* Botón */
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #2563eb; /* Azul */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer; /* Cursor cambia a mano */
+}
+
+/* Efecto hover */
+button:hover {
+    background-color: #1e4ed8;
+}
+
+/* Mensaje debajo del formulario */
+#message {
+    margin-top: 15px;
+    text-align: center;
+    font-weight: bold;
+}
