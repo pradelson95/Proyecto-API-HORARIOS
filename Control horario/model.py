@@ -1,6 +1,7 @@
 from pydantic import BaseModel
 from datetime import time, datetime, timedelta
-from pydantic import model_validator, field_validator
+from pydantic import model_validator, field_validator, Field
+
 
 
 class EmployeeUpdate(BaseModel):
@@ -24,7 +25,7 @@ class Employee_Public(BaseModel):
 # que vienen desde el frontend
 class Employee(BaseModel):
     id_identification: int
-    full_name: str
+    full_name: str = Field(..., min_length=5, max_length=30) # El nombre completo no puede estar vacío
     check_in: time
     check_out: time 
 
@@ -59,14 +60,6 @@ class Employee(BaseModel):
             raise ValueError("check_in cannot be before 7:00 AM")
         return value
 
-    
-    @field_validator("full_name")
-    @classmethod
-    def validate_full_name_length(cls, value):
-        if len(value) > 20:
-            raise ValueError("full_name must be at most 20 characters long")
-        return value
-     
     
     
     @model_validator(mode="after") # valida los campos luego de que se hayan validado individualmente

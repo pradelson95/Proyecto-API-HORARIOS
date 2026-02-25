@@ -3,7 +3,7 @@ from create_database import Base
 
 class EmployeeDB(Base):
     __tablename__ = "employees"
-
+    # id_identification y clave primaria
     id_identification = Column(Integer, primary_key=True, index=True)
     full_name = Column(String, nullable=False)
     check_in = Column(Time, nullable=False)
