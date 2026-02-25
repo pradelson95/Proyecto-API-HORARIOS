@@ -3,17 +3,6 @@
 API REST desenvolvida com FastAPI para gerenciamento e controle de horários de funcionários.  
 O sistema permite registrar entrada e saída, aplicar validações de regras de negócio e realizar testes de carga para análise de desempenho.
 
-## 📸 Demonstração do Projeto
-
-### Tela Principal
-![Tela Principal](assets/sc fastapi1.png)
-
-### Painel Administrativo
-![Painel Admin](assets/sc fastapi2.png)
-
-### Teste de Performance com Locust
-![Teste Locust](assets/sc fastapi3.png)
-
 ---
 
 ## 🚀 Tecnologias Utilizadas
